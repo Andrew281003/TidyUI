@@ -1,0 +1,28 @@
+# .NET build output
+bin/
+obj/
+artifacts/
+TestResults/
+
+# Generated NuGet packages and local feeds
+packages/
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+.nuget/
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Temporary and machine-specific files
+*.tmp
+*.temp
+*.log
+*~
+.DS_Store

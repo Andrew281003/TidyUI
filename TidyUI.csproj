@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>TidyUI</PackageId>
+    <Version>0.1.0-preview.1</Version>
+    <TargetFramework>net10.0</TargetFramework>
+    <Authors>quake_20</Authors>
+    <Description>A beginner-friendly, customizable .NET terminal UI library featuring responsive panels and tiling layouts.</Description>
+    <PackageTags>terminal;tui;console;layout;panels</PackageTags>
+    <RepositoryUrl>https://github.com/Andrew281003/TidyUI</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="TidyUI.Demo/**/*.cs;TidyUI.Tests/**/*.cs;**/obj/**/*.cs;**/bin/**/*.cs" />
+    <InternalsVisibleTo Include="TidyUI.Tests" />
+    <None Update="README.md" Pack="true" PackagePath="/" />
+    <None Update="LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
